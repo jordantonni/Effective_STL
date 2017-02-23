@@ -5,6 +5,30 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
+    <Filter Include="0 Introduction">
+      <UniqueIdentifier>{24df6165-fde6-488d-995b-7d027f34976b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1 Containers">
+      <UniqueIdentifier>{cb20defa-72ec-46d6-a3ae-8cd46a38294a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2 Vector and String">
+      <UniqueIdentifier>{0681c998-9113-4560-8e0c-7a23d910dee2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3 Associative Containers">
+      <UniqueIdentifier>{6a8bf379-5f9a-4311-af46-624f5e25d4ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="4 Iterators">
+      <UniqueIdentifier>{97346c62-0399-48d3-a83c-2591b43a37fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="5 Algorithms">
+      <UniqueIdentifier>{c66a8701-39cc-4c3c-b59a-07b8343cffa8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="6 Functors, Functor Classes and Functions">
+      <UniqueIdentifier>{9e3dbe3b-201f-4777-b7f9-db4f9872ee7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="7 Programming with STL">
+      <UniqueIdentifier>{9657afd8-5d4a-46ad-a5c3-b8aad45d7eda}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
