@@ -142,6 +142,56 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Item 01 Choose conatiner with care.cpp" />
+    <ClCompile Include="Item 02 Container independent code.cpp" />
+    <ClCompile Include="Item 03 Make copying chepa and correct for objects in containers.cpp" />
+    <ClCompile Include="Item 04 Call empty instead of checking size with zero.cpp" />
+    <ClCompile Include="Item 05 Prefer range member functions.cpp" />
+    <ClCompile Include="Item 06 C++ most vexing parse.cpp" />
+    <ClCompile Include="Item 07 Delete newd pointers before the destorying container.cpp" />
+    <ClCompile Include="Item 08 Never use autoptr in containers.cpp" />
+    <ClCompile Include="Item 09 Carefully choose erasing option.cpp" />
+    <ClCompile Include="Item 10 Allocator conventions and restrictions.cpp" />
+    <ClCompile Include="Item 11 When to use custom allocators.cpp" />
+    <ClCompile Include="Item 12 Containers and thread safety.cpp" />
+    <ClCompile Include="Item 13 Use vector and string over heap arrays.cpp" />
+    <ClCompile Include="Item 14 Reserve to avoid relocations.cpp" />
+    <ClCompile Include="Item 15 String implementations and varations.cpp" />
+    <ClCompile Include="Item 16 Passing vector and string to legacy APIs.cpp" />
+    <ClCompile Include="Item 17 Swap trick to trim excess capacity.cpp" />
+    <ClCompile Include="Item 18 Dont use vector of bool.cpp" />
+    <ClCompile Include="Item 19 Equality vs equilivance.cpp" />
+    <ClCompile Include="Item 20 Specify comparison types for associative containers of pointers.cpp" />
+    <ClCompile Include="Item 21 Always have comparison functions return false for equal values.cpp" />
+    <ClCompile Include="Item 22 Avoid in-place key modification in set and multiset.cpp" />
+    <ClCompile Include="Item 23 Consider replacing associative containers with sorted vectors.cpp" />
+    <ClCompile Include="Item 24 Choose carefully between map operator[] and map-insert.cpp" />
+    <ClCompile Include="Item 25 Nonstandard hashed containers.cpp" />
+    <ClCompile Include="Item 26 Prefer iterator over const and others NO LONGER TRUE.cpp" />
+    <ClCompile Include="Item 27 Distance and advance to convert iterators to and from const.cpp" />
+    <ClCompile Include="Item 28 How to use reverse iterators base iterator.cpp" />
+    <ClCompile Include="Item 29 istreambuf iterators for char by char input.cpp" />
+    <ClCompile Include="Item 30 Ensure destination rages are big enough.cpp" />
+    <ClCompile Include="Item 31 Sorting options.cpp" />
+    <ClCompile Include="Item 32 Follow remove with erase to remove things.cpp" />
+    <ClCompile Include="Item 33 Cautious of remove on containers of pointers.cpp" />
+    <ClCompile Include="Item 34 What algorithims need sorted ranges.cpp" />
+    <ClCompile Include="Item 35 Case insensitive string comparisons.cpp" />
+    <ClCompile Include="Item 36 Copy if.cpp" />
+    <ClCompile Include="Item 37 Accumulate and for each for ranges.cpp" />
+    <ClCompile Include="Item 38 Functor classes for pass by value.cpp" />
+    <ClCompile Include="Item 39 Make predicates pure functions.cpp" />
+    <ClCompile Include="Item 40 Make functor classes adaptable.cpp" />
+    <ClCompile Include="Item 41 Reasons for ptr_fun mem_fun etc.cpp" />
+    <ClCompile Include="Item 42 Ensure less of T means operator less.cpp" />
+    <ClCompile Include="Item 43 Use algorithims over loops.cpp" />
+    <ClCompile Include="Item 44 Member functions to algorithim free functions NO LONGER TRUE.cpp" />
+    <ClCompile Include="Item 45 Distinguish between count find etc.cpp" />
+    <ClCompile Include="Item 46 Functions objects onver functions as parameters.cpp" />
+    <ClCompile Include="Item 47 Avoid write only code.cpp" />
+    <ClCompile Include="Item 48 Always include correct headers.cpp" />
+    <ClCompile Include="Item 49 Decipher STL compiler errors.cpp" />
+    <ClCompile Include="Item 50 STL websites.cpp" />
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

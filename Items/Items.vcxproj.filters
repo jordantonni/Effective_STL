@@ -1,10 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
     <Filter Include="0 Introduction">
       <UniqueIdentifier>{24df6165-fde6-488d-995b-7d027f34976b}</UniqueIdentifier>
     </Filter>
@@ -31,8 +27,156 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Main.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Item 01 Choose conatiner with care.cpp">
+      <Filter>1 Containers</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 02 Container independent code.cpp">
+      <Filter>1 Containers</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 03 Make copying chepa and correct for objects in containers.cpp">
+      <Filter>1 Containers</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 04 Call empty instead of checking size with zero.cpp">
+      <Filter>1 Containers</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 05 Prefer range member functions.cpp">
+      <Filter>1 Containers</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 06 C++ most vexing parse.cpp">
+      <Filter>1 Containers</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 07 Delete newd pointers before the destorying container.cpp">
+      <Filter>1 Containers</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 08 Never use autoptr in containers.cpp">
+      <Filter>1 Containers</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 09 Carefully choose erasing option.cpp">
+      <Filter>1 Containers</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 10 Allocator conventions and restrictions.cpp">
+      <Filter>1 Containers</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 11 When to use custom allocators.cpp">
+      <Filter>1 Containers</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 12 Containers and thread safety.cpp">
+      <Filter>1 Containers</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 13 Use vector and string over heap arrays.cpp">
+      <Filter>2 Vector and String</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 18 Dont use vector of bool.cpp">
+      <Filter>2 Vector and String</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 17 Swap trick to trim excess capacity.cpp">
+      <Filter>2 Vector and String</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 16 Passing vector and string to legacy APIs.cpp">
+      <Filter>2 Vector and String</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 15 String implementations and varations.cpp">
+      <Filter>2 Vector and String</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 14 Reserve to avoid relocations.cpp">
+      <Filter>2 Vector and String</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 19 Equality vs equilivance.cpp">
+      <Filter>3 Associative Containers</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 25 Nonstandard hashed containers.cpp">
+      <Filter>3 Associative Containers</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 24 Choose carefully between map operator[] and map-insert.cpp">
+      <Filter>3 Associative Containers</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 23 Consider replacing associative containers with sorted vectors.cpp">
+      <Filter>3 Associative Containers</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 22 Avoid in-place key modification in set and multiset.cpp">
+      <Filter>3 Associative Containers</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 21 Always have comparison functions return false for equal values.cpp">
+      <Filter>3 Associative Containers</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 20 Specify comparison types for associative containers of pointers.cpp">
+      <Filter>3 Associative Containers</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 26 Prefer iterator over const and others NO LONGER TRUE.cpp">
+      <Filter>4 Iterators</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 27 Distance and advance to convert iterators to and from const.cpp">
+      <Filter>4 Iterators</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 28 How to use reverse iterators base iterator.cpp">
+      <Filter>4 Iterators</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 29 istreambuf iterators for char by char input.cpp">
+      <Filter>4 Iterators</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 30 Ensure destination rages are big enough.cpp">
+      <Filter>5 Algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 37 Accumulate and for each for ranges.cpp">
+      <Filter>5 Algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 36 Copy if.cpp">
+      <Filter>5 Algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 35 Case insensitive string comparisons.cpp">
+      <Filter>5 Algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 33 Cautious of remove on containers of pointers.cpp">
+      <Filter>5 Algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 34 What algorithims need sorted ranges.cpp">
+      <Filter>5 Algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 32 Follow remove with erase to remove things.cpp">
+      <Filter>5 Algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 31 Sorting options.cpp">
+      <Filter>5 Algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 38 Functor classes for pass by value.cpp">
+      <Filter>6 Functors, Functor Classes and Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 42 Ensure less of T means operator less.cpp">
+      <Filter>6 Functors, Functor Classes and Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 41 Reasons for ptr_fun mem_fun etc.cpp">
+      <Filter>6 Functors, Functor Classes and Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 40 Make functor classes adaptable.cpp">
+      <Filter>6 Functors, Functor Classes and Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 39 Make predicates pure functions.cpp">
+      <Filter>6 Functors, Functor Classes and Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 43 Use algorithims over loops.cpp">
+      <Filter>7 Programming with STL</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 50 STL websites.cpp">
+      <Filter>7 Programming with STL</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 49 Decipher STL compiler errors.cpp">
+      <Filter>7 Programming with STL</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 48 Always include correct headers.cpp">
+      <Filter>7 Programming with STL</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 47 Avoid write only code.cpp">
+      <Filter>7 Programming with STL</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 46 Functions objects onver functions as parameters.cpp">
+      <Filter>7 Programming with STL</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 45 Distinguish between count find etc.cpp">
+      <Filter>7 Programming with STL</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 44 Member functions to algorithim free functions NO LONGER TRUE.cpp">
+      <Filter>7 Programming with STL</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
