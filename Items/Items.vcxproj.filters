@@ -179,4 +179,9 @@
       <Filter>7 Programming with STL</Filter>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="Container Background.txt">
+      <Filter>0 Introduction</Filter>
+    </Text>
+  </ItemGroup>
 </Project>

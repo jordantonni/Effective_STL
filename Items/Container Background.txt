@@ -1,0 +1,83 @@
+Sequence Containers:
+--- ONLY THESE ARE ARRAY BASED -----
+    - Array:
+        - Contiguous (Good for cache hits)
+        - Not dynamic resize (Stored on stack)
+        - array<int,4> is different type from array<int,3>
+
+    - Vector:
+        - Contiguous (Good for cache hits)
+        - Dynamic resizing (Stored on heap)
+        - Insert/Remove at End O(1)
+        - Insert/Remove at Beginning or Middle O(n)
+        - Search O(n)
+
+    - Deque:
+        - Not Contiguous (List of arrays) (Bad for cache hits)
+        - Insert/Remove at Start/End faster than Vector
+        - Insert/Remove at Middle O(n)
+        - Search O(n)
+
+
+--- EVERYTHING BELOW IS NODE BASED------
+
+
+    - List:
+        - Not contiguous (Bad for cache hits)
+        - Double linked
+        - Insert/Remove anywhere O(1)
+        - Search O(n)
+        - No random access
+        - Splice O(1)
+
+    - Forward List:
+        - Only forward link
+        - Not contiguous (Bad for cache hits)
+
+Associative (Sorted) Containers (Binary tree)
+    - Set:
+        - Sorted on the value of the item itself
+        - No duplicates
+        - Insert/Remove O(log n)
+            - Can reduce to O(1) by providing an iterator that "hints" where the value should go
+        - Search O(log n)
+
+    - Multiset:
+        - Allows duplicated items
+        - Search O(n)
+
+    - Map:
+        - Sorted on the key in the key/value pair
+        - No duplictes
+        - Same stats as set
+
+    - Multimap:
+        - Allows duplicates
+
+Unordered Containers (Hash Table)
+    - Hash table is an array (of buckets) to linked lists (Hashing with chaining)
+    - Search O(1) Fastest search of all
+        - i.e. Unordered Map O(1), map O(log n)
+
+    - Unordered Set:
+        -
+    - Unordered Multiset:
+        - Allows duplicates
+    - Unordered Map:
+        -
+    - Unordered Multimap:
+        - Allows duplicates
+
+
+Container Adapters (Modify underlying container)
+    - Restricted interface to meet special needs
+    - Use fundamental containers
+
+    1) Stack
+        - LIFO, push, pop, top
+
+    2) Queue
+        - FIFO, push, pop, front, back
+
+    3) Priority Queue (First item has greatest priority)
+        - push, pop, top
