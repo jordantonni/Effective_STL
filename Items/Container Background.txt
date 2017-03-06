@@ -8,15 +8,18 @@ Sequence Containers:
     - Vector:
         - Contiguous (Good for cache hits)
         - Dynamic resizing (Stored on heap)
-        - Insert/Remove at End O(1)
+        - Insert/Remove at End O(1) Amoritized
         - Insert/Remove at Beginning or Middle O(n)
         - Search O(n)
 
     - Deque:
         - Not Contiguous (List of arrays) (Bad for cache hits)
-        - Insert/Remove at Start/End faster than Vector
+        - Insert/Remove at Start/End faster than Vector O(1) Amortized
         - Insert/Remove at Middle O(n)
         - Search O(n)
+
+	- String
+		- 
 
 
 --- EVERYTHING BELOW IS NODE BASED------
@@ -44,7 +47,7 @@ Associative (Sorted) Containers (Binary tree)
 
     - Multiset:
         - Allows duplicated items
-        - Search O(n)
+        - Search O(log n)
 
     - Map:
         - Sorted on the key in the key/value pair

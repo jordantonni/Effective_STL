@@ -34,9 +34,6 @@
     <ClCompile Include="Item 02 Container independent code.cpp">
       <Filter>1 Containers</Filter>
     </ClCompile>
-    <ClCompile Include="Item 03 Make copying chepa and correct for objects in containers.cpp">
-      <Filter>1 Containers</Filter>
-    </ClCompile>
     <ClCompile Include="Item 04 Call empty instead of checking size with zero.cpp">
       <Filter>1 Containers</Filter>
     </ClCompile>
@@ -177,6 +174,9 @@
     </ClCompile>
     <ClCompile Include="Item 44 Member functions to algorithim free functions NO LONGER TRUE.cpp">
       <Filter>7 Programming with STL</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 03 Make copying cheap and correct for objects in containers.cpp">
+      <Filter>1 Containers</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

@@ -144,7 +144,7 @@
   <ItemGroup>
     <ClCompile Include="Item 01 Choose conatiner with care.cpp" />
     <ClCompile Include="Item 02 Container independent code.cpp" />
-    <ClCompile Include="Item 03 Make copying chepa and correct for objects in containers.cpp" />
+    <ClCompile Include="Item 03 Make copying cheap and correct for objects in containers.cpp" />
     <ClCompile Include="Item 04 Call empty instead of checking size with zero.cpp" />
     <ClCompile Include="Item 05 Prefer range member functions.cpp" />
     <ClCompile Include="Item 06 C++ most vexing parse.cpp" />

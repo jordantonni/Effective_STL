@@ -1,12 +1,12 @@
-#include <map>
-namespace item01
+#include <iostream>
+
+namespace item05
 {
     void test();
 }
 
+
 int main()
 {
-    item01::test();
-    return 0;
+    item05::test();
 }
-
