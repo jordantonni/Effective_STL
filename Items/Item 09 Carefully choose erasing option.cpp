@@ -67,7 +67,7 @@ namespace item09
 
         // Remove_if for associatve
         // Note the postfix increment of it, means we erase the old iterator value that postinc returns, but the move on it to the new value
-        // Note: erasure invalidates ALL iterators on a sequence container!, but in an associatve, it only invalidates the iterator the the erased element
+        // Note: erasure invalidates ALL iterators on a sequence container!, but in an associatve, it only invalidates the iterator the erased element
         for (set<int>::iterator it = begin(mySet); it != end(mySet);)
         {
             if (odd(*it))
