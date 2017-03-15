@@ -1,12 +1,13 @@
 #include <iostream>
 
-namespace item17
+namespace item20
 {
     void test();
 }
 
+using namespace std;
 
 int main()
 {
-    item17::test();
+    item20::test();
 }

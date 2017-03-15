@@ -84,16 +84,14 @@ namespace item17
                     return !(lhs < rhs);
                 };
 
-        partial_sort(begin(contestants), begin(contestants) + 4, end(contestants), comp_lambda);    // Sort the first 4 highest money values
+        partial_sort(begin(contestants), begin(contestants) + 4, end(contestants), comp_lambda); // Sort the first 4 highest money values
 
-        contestants.erase(begin(contestants)+4, end(contestants)); // Remove all the rest (This only moves the end itertator down, doesnt delete them)
+        contestants.erase(begin(contestants) + 4, end(contestants)); // Remove all the rest (This only moves where the end iterator points to, doesnt delete elems)
 
         cout << endl << endl << "Cap = " << contestants.capacity() << endl;
-        vector<Contestant>(begin(contestants), end(contestants)).swap(contestants);     // Swap trick 
+        vector<Contestant>(begin(contestants), end(contestants)).swap(contestants); // Swap trick 
         cout << endl << endl << "Cap = " << contestants.capacity() << endl;
 
         print(contestants);
-
-
     }
 }
