@@ -1,6 +1,6 @@
 #include <iostream>
 
-namespace item20
+namespace item22
 {
     void test();
 }
@@ -9,5 +9,5 @@ using namespace std;
 
 int main()
 {
-    item20::test();
+    item22::test();
 }

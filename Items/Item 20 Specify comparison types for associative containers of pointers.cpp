@@ -14,7 +14,7 @@
  *      - Using the STL algorithim way along with iterator objects instead of raw dereferences is safer and gives better error messages
  *
  * Summary:
- *  - 
+ *  - Create a dereferencing functor that can compare the objects the pointers point to if creating an associative container of pointers
  */
 
 #include <iostream>
@@ -23,9 +23,24 @@
 
 namespace item20
 {
+    // Generic comparison operator that any associative container can use, as long as the type it points to supports operator<
+    struct generic_dereference_comparison
+    {
+        template <typename T>
+        bool operator()(const T* lhs, const T* rhs) const
+        {
+            return *lhs < *rhs;
+        }
+    };
+
     struct Widget
     {
         int id = -1;
+
+        bool operator<(const Widget& rhs) const
+        {
+            return id < rhs.id;
+        }
 
         struct Widget_Comparison
         {
@@ -47,7 +62,7 @@ namespace item20
 
     void test()
     {
-        std::set<Widget*, Widget::Widget_Pointer_Comparison> wid_set;
+        std::set<Widget*, generic_dereference_comparison> wid_set;
         wid_set.insert(new Widget{ 1337 });
         wid_set.insert(new Widget{ 123 });
         wid_set.insert(new Widget{ 99 });
@@ -56,6 +71,5 @@ namespace item20
 
         for (const auto& e : wid_set)
             std::cout << e->id << std::endl;
-
     }
 }
