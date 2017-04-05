@@ -54,56 +54,63 @@ namespace item31
 {
     using namespace std;
 
-    struct Person
+    template <typename Container>
+    void print(const Container& c)
     {
-        string name;
-        float exam_result;
-
-        Person(const string& na, const float res)
-            : name{ na }
-            , exam_result{ res }
-        {}
-
-        friend ostream& operator<<(ostream& ost, const Person& p)
+        for (const auto e : c)
         {
-            ost << p.name << "\t[ " << p.exam_result << " ]\n";
-            return ost;
+            cout << e << " ";
         }
-    };
-
-    bool rescomp(const Person& lhs, const Person& rhs)
-    {
-        return lhs.exam_result > rhs.exam_result;
+        cout << "\n";
     }
 
-    void print(const vector<Person>& c)
+    template <typename Container, typename Iter>
+    void print(const Container& c, Iter& it)
     {
-        for(const auto& e : c)
-            cout << e;
-
-        cout << endl << endl;
+        typename Container::const_iterator i = begin(c);
+        while (i != it)
+        {
+            cout << *i++ << " ";
+        }
+        cout << "\n";
     }
 
     void test()
     {
-        vector<Person> students;
-        students.reserve(10);
+        vector<int> v { 3,6,2,4,7,9,45,23,89, 1 };
+        print(v);
 
-        students.emplace_back(Person { "ryan", 34 });
-        students.emplace_back(Person { "emma",100 });
-        students.emplace_back(Person { "jeff",32 });
-        students.emplace_back(Person { "mark",53 });
-        students.emplace_back(Person { "john",98 });
-        students.emplace_back(Person { "sara",21 });
-        students.emplace_back(Person { "kate",87 });
-        students.emplace_back(Person { "rhonda",63 });
-        students.emplace_back(Person { "richard",21 });
-        students.emplace_back(Person { "sam",88 });
+        //Full sort
+        sort(begin(v), end(v));
+        print(v);
 
-        print(students);
+        // Partial Sort - Sort highest 4 in order (1-4 are sorted also)
+        partial_sort(begin(v), begin(v) + 4, end(v), [](const auto lhs, const auto rhs) -> auto
+                     {
+                         return lhs > rhs;
+                     });
+        print(v);
 
-        partial_sort(begin(students), begin(students) + 4, end(students), rescomp);
+        sort(begin(v), end(v));
+        print(v);
 
-        print(students);
+        //nth_element - Sort highest 4 (1-4 are not sorted)
+        nth_element(begin(v), begin(v) + 4, end(v), [](const auto lhs, const auto rhs) -> auto
+                    {
+                        return rhs < lhs;
+                    });
+        print(v);
+
+        sort(begin(v), end(v));
+        print(v);
+
+
+        // partition - Sort such that all elements satisfing the lamba predicate are before the rest
+        auto evenDemarcate = partition(begin(v), end(v), [](const auto elem) -> auto
+                                       {
+                                           return !(elem % 2);
+                                       });
+        print(v, evenDemarcate);
+        print(v);
     }
 }
