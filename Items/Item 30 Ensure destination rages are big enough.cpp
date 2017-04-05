@@ -50,5 +50,12 @@ namespace item30
         // back_inserter constructs a back_insert_iterator for the vector<int> dest container
         // back_insert_iterator invokes vector<int>::push_back() member function on dest to add the return value from transmorgify 
         transform(begin(src), end(src), back_inserter(dest), transmorgify);
+
+        // back_inserter() just infers the type of the container and returns the below insert iterator easier
+        transform(rbegin(src), rend(src), back_insert_iterator<vector<int>>(dest), transmorgify);
+
+        // Dont need to use an insert iterator below, as the destination range already has values, we are just going to overwrite them
+        vector<int> dest2(10, 1337);
+        transform(begin(src), end(src), begin(dest2), transmorgify);
     }
 }

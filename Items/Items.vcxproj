@@ -187,7 +187,7 @@
     <ClCompile Include="Item 43 Use algorithims over loops.cpp" />
     <ClCompile Include="Item 44 Member functions to algorithim free functions NO LONGER TRUE.cpp" />
     <ClCompile Include="Item 45 Distinguish between count find etc.cpp" />
-    <ClCompile Include="Item 46 Functions objects onver functions as parameters.cpp" />
+    <ClCompile Include="Item 46 Function objects over functions as parameters.cpp" />
     <ClCompile Include="Item 47 Avoid write only code.cpp" />
     <ClCompile Include="Item 48 Always include correct headers.cpp" />
     <ClCompile Include="Item 49 Decipher STL compiler errors.cpp" />
