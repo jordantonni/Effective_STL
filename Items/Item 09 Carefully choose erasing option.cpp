@@ -24,7 +24,7 @@
  *      - List: Remove_if member function
  *      - Associatve Contianer: Loop on iterator and test then erase. USE POSTINCRMENT on the iterator to ensure you dont invalidate it when you erase
  *      
- *  - Do decorate, i.e. do something else, when you remove each item:
+ *  - Remove decorator, i.e. do something else, when you remove each item:
  *      - Sequence Container: Loop to decorate and also erase member function, use return value of erase to get iterator to next element, valid!
  *      - Associatve Container: Just decorate previous loop versions
  */
