@@ -36,6 +36,7 @@ namespace item33
 
     void test()
     {
+        // Store 4 pointers to heap alloacted widgets in the vector
         vector<widget*> vec;
         vec.push_back(new widget);
         vec.push_back(new widget);
@@ -43,7 +44,8 @@ namespace item33
         vec.push_back(new widget);
 
        
-
+        // If we remove some of these widget* elements, their values will be overwritten and we can never free the memory they held
+        // Need to first free the memory via delete then we can remove them
 
     }
 }
