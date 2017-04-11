@@ -39,7 +39,7 @@ namespace item40
 {
     using namespace std;
 
-    struct myFunctor : unary_function<const int, bool>
+    struct myFunctor : public unary_function<const int, bool>
     {
         bool operator()(const int x) const
         {
@@ -56,13 +56,12 @@ namespace item40
     {
         vector<int> vec { 1,2,3,4,5,6 };
 
-        // Copies odd numbers by wrapping the isEven function to provide typedefs, then adapting the function using not1 function adpater
+        // Copies odd numbers by wrapping the isEven function by ptr_fun to provide typedefs, then adapting the function using not1 function adpater
         copy_if(begin(vec), end(vec), ostream_iterator<int>(cout, " "), not1(ptr_fun(isEven)));
 
         cout << endl;
 
         // Same as above but uses the functor object, we inherit from unary_function to provide the typedefs required by not1 function adapter
         copy_if(begin(vec), end(vec), ostream_iterator<int>(cout, " "), not1(myFunctor()));
-
     }
 }
