@@ -76,6 +76,7 @@ namespace item37
 
         cout << total << endl;
 
+
         float avg = for_each(begin(results), end(results), runningAvg()).get(); // Using for_each with a more complicated custom functor for average
         cout << avg << endl;
     }
