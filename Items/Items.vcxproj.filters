@@ -169,13 +169,13 @@
     <ClCompile Include="Item 45 Distinguish between count find etc.cpp">
       <Filter>7 Programming with STL</Filter>
     </ClCompile>
-    <ClCompile Include="Item 44 Member functions to algorithim free functions NO LONGER TRUE.cpp">
-      <Filter>7 Programming with STL</Filter>
-    </ClCompile>
     <ClCompile Include="Item 03 Make copying cheap and correct for objects in containers.cpp">
       <Filter>1 Containers</Filter>
     </ClCompile>
     <ClCompile Include="Item 46 Function objects over functions as parameters.cpp">
+      <Filter>7 Programming with STL</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 44 Member functions to algorithim free functions.cpp">
       <Filter>7 Programming with STL</Filter>
     </ClCompile>
   </ItemGroup>
