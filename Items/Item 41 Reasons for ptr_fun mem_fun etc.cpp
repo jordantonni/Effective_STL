@@ -39,6 +39,7 @@
 #include <functional>
 #include <algorithm>
 #include <iterator>
+#include <deque>
 
 namespace item41
 {
@@ -74,5 +75,11 @@ namespace item41
         copy_if(begin(vec), end(vec), ostream_iterator<char>(cout, " "), mem_fun_ref(&Widget::isGood));
         cout << endl;
 
+        int arr[10] = { 1,2,3,4,5,6,7,8,9,10 };
+        deque<int> d;
+
+        transform(begin(arr), end(arr), back_inserter(d), bind2nd(plus<int>(), 41));
+
+        copy(begin(d), end(d), ostream_iterator<int>(cout, " "));
     }
 }

@@ -63,5 +63,6 @@ namespace item40
 
         // Same as above but uses the functor object, we inherit from unary_function to provide the typedefs required by not1 function adapter
         copy_if(begin(vec), end(vec), ostream_iterator<int>(cout, " "), not1(myFunctor()));
+
     }
 }
