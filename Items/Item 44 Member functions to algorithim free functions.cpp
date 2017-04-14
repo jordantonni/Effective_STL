@@ -50,24 +50,19 @@ namespace item44
         cout << "Inserts complete." << endl << endl;
 
 
-
         cout << "Member Finding 1337: ";
-        auto before = chrono::duration_cast<chrono::milliseconds> (chrono::system_clock::now().time_since_epoch()).count();
+        auto before = chrono::duration_cast<chrono::milliseconds>(chrono::system_clock::now().time_since_epoch()).count();
         auto found1 { bigset.find(1337) };
         cout << boolalpha << (end(bigset) != found1) << endl;
-        auto after = chrono::duration_cast<chrono::milliseconds> (chrono::system_clock::now().time_since_epoch()).count() - before;
+        auto after = chrono::duration_cast<chrono::milliseconds>(chrono::system_clock::now().time_since_epoch()).count() - before;
         cout << "Find duration: " << after << "ms" << endl << endl;
 
 
         cout << "Algor Finding 1337: ";
-        auto before2 = chrono::duration_cast<chrono::milliseconds> (chrono::system_clock::now().time_since_epoch()).count();
+        auto before2 = chrono::duration_cast<chrono::milliseconds>(chrono::system_clock::now().time_since_epoch()).count();
         auto found2 = std::find(begin(bigset), end(bigset), 1337);
         cout << boolalpha << (end(bigset) != found2) << endl;
-        auto after2 = chrono::duration_cast<chrono::milliseconds> (chrono::system_clock::now().time_since_epoch()).count() - before2;
+        auto after2 = chrono::duration_cast<chrono::milliseconds>(chrono::system_clock::now().time_since_epoch()).count() - before2;
         cout << "Find duration: " << after2 << "ms" << endl;
-
-
-
-
     }
 }
