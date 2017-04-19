@@ -1,4 +1,26 @@
 /*
+ * count, find, binary_search, lower_bound, upper_bound, equal_range
+ * What each does and when to use them:
+ * 
+ * Unsorted Ranges: (Linear Time) (Equality)
+ * 
+ *  count    : Returns how many elements have that value, can convert to bool to test for existance, slower than find if successful as it doesnt stop when found
+ *  
+ *  find     : Returns iterator to first element with value, if not found returns end()
+ *  
+ *  
+ * Sorted Ranges: (Logaritmic time) (Equivalence)
+ *  
+ *  binary_search   : Returns true if value present, false otherwise
+ *  
+ *  lower_bound     : Returns iterator to first element with value, or if not iterator to where it should be inserted
+ *                    Need to test return value against value searched for, but by using equivalence! 
+ *                    
+ *  equal_range     : Returns pair of iterator
+ *
+ *
+ *
+ *
  *
  * {1,2,3,4,4,5,6}
  * 
@@ -20,51 +42,42 @@
 
 #include <vector>
 #include <iostream>
+#include <string>
 #include <algorithm>
+#include <set>
+#include <iterator>
+#include <functional>
 
 namespace item45
 {
     using namespace std;
 
-    struct widget
-    {
-        int x;
-
-        widget(const int v)
-            : x { v }
-        {}
-    };
-
-    bool operator<(const widget& lhs, const widget& rhs)
-    {
-        cout << "OP<" << endl;
-        return lhs.x < rhs.x;
-    }
-
     void test()
     {
-        vector<int> v { 10,9,8,7,4,4,4,6,5,3,2,1 };
+        cout << std::boolalpha;
+        vector<int> vector { 8,3,5,5,5,2,0,9 };
 
-        for (const auto x : v)
-            cout << x << " ";
-        cout << endl;
+        //Unsorted  ------------------------------
 
-        sort(begin(v), end(v));
+        //Using count to check if value is present
+        if(count(begin(vector), end(vector), 5))
+            cout << "Found" << endl;
 
-        for (const auto x : v)
-            cout << x << " ";
-        cout << endl;
+        //Using find to check if value is present
+        if(find(begin(vector), end(vector), 5) != end(vector))
+            cout << "Found" << endl;
+
+        //Sorted    ------------------------------
+        sort(begin(vector), end(vector));
+
+        //Using binary_search to check if value is present
+        if(binary_search(begin(vector), end(vector), 5))
+            cout << "Found" << endl;
 
 
-        auto it = upper_bound(begin(v), end(v), 4);
-        cout << *it << endl;
-
-        for (const auto x : v)
-            cout << x << " ";
-        cout << endl;
 
 
-        vector<widget> vw { 1,2,5,3,2,43 };
-        sort(begin(vw), end(vw));
+
+
     }
 }

@@ -29,9 +29,9 @@
  *      
  *      
  * NOTE: 
- *  - Say we have a comparison function that does a case insensitive comparison between two strings, and returns true of lhs is < rhs, false otherwise
+ *  - Say we have a comparison function that does a case insensitive comparison between two strings, and returns true if lhs < rhs, false otherwise
  *  - So if we insert "Dog" and then "dog", due to the case insensitive comparison function used, only Dog will be added
- *  - If we then used a EQUALITY based search, such as algorithim std::find("dog"), it will return false, even though the containers equlivance treats "Dog" as "dog"
+ *  - If we then used an EQUALITY based search, such as algorithim std::find("dog"), it will return false, even though the containers equlivance treats "Dog" as "dog"
  *
  *
  * Summary:

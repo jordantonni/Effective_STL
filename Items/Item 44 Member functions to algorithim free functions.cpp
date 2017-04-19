@@ -1,10 +1,22 @@
 /*
- *
- *
- *
+ * Invoke member functions with the same name over free standing algorithm functions
+ * 
+ * Member functions are faster:
+ *  - Find member function of set is logarithmic, find algo call to a set is linear
+ *  - 
+ *  
+ * Member functions integrate with their containers better than free standing algorithms:
+ *  - STL Algorithms use equality, member functions use equivalence
+ *  - STL Algorithms look at the pair of objects in a map, Map::memberFunctions() only look at the key
+ *  
+ * Lists:
+ *  - Lists member functions only manipulate pointers, algo calls invoke copies which is slower
+ *  - std::sort cannot be invoked on a list due to it only providing bi-directional iterators where it requires random access
+ *      - list::sort() is specialized and better
+ *      
  *
  * Summary:
- *  -
+ *  - Invoke the member function with the same name as the std::algorithm if it exists, it is more efficient and correct
  */
 
 #include <set>

@@ -54,6 +54,7 @@ namespace item05
         print("vec", vec);
         print("src", src);
 
+        // Assigns into vec, the values within the range demarcated by the two find calls within vector src
         vec.assign(
             find(src.begin(), src.end(), 1337),
             find(src.rbegin(), src.rend(), 1337).base());
